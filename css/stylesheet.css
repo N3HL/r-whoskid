@@ -6,14 +6,16 @@
 
 /* #region Addon: Somewhat Larger Header --- */
 
-#header {height: 294px;}
-#header-bottom-left, body:not(.search-page) .side:before {top: 198px;}
-body:not(.search-page) .side .titlebox h1.redditname {top: 406px;}
-body:not(.search-page) .titlebox span.subscribers {top: 432px;}
-body:not(.search-page) .titlebox .fancy-toggle-button {top: 412px;}
-#search {top: 482px;}
-body:not(.search-page)  .morelink {top: 540px;}
-.comments-page .side .linkinfo {top: 592px;}
+	#header {height: 294px;}
+	#header-bottom-left {top: 198px;}
+	body .side:before { display: none; }
+	#search {top: 310px;}
+	body .morelink {top: 370px;}
+	body .side .titlebox { margin-top: -75px; }
+	body .side .titlebox h1.redditname {top: 440px;}
+	body .titlebox span.subscribers {top: 470px;}
+	body .titlebox .fancy-toggle-button {top: 445px;}
+	.comments-page .side .linkinfo {top: 520px;}
 
 /* #endregion */
 
@@ -47,30 +49,30 @@ body:not(.search-page)  .morelink {top: 540px;}
 
 /* #region Colorize the Subreddit Info Box --- */
 
-.side .titlebox h1.redditname:before {background-color: #769278;}
-.side .titlebox h1.redditname a, .titlebox span.subscribers {color: #fff;}
+	.side .titlebox h1.redditname:before {background-color: #769278;}
+	.side .titlebox h1.redditname a, .titlebox span.subscribers {color: #fff;}
 
 /* #endregion */
 
 /* #region Text Strings --- */
 
-.arrow.down:after { display: none;}
-div.titlebox span.number:after {content: " subs";}
-.titlebox .users-online .number:after {content: " currently online";}
+	.arrow.down:after { display: none;}
+	div.titlebox span.number:after {content: " subs";}
+	.titlebox .users-online .number:after {content: " currently online";}
 
 /* #endregion Addon --- */
 
 /* #region /r/whoskid */
 
-body {
-	background: #000;
-}
+	body {
+		background: #000;
+	}
 
-#header .pagename a {
-	text-decoration: none;
-}
+	#header .pagename a {
+		text-decoration: none;
+	}
 
-/* #region sub name glitch */
+	/* #region sub name glitch */
 
 	@-webkit-keyframes glitch {
 	  0% {
@@ -157,8 +159,12 @@ body {
 	}
 /* #endregion */
 
-body.listing-page > .content, body.other-discussions-page > .content, .comments-page .link, .commentarea > .sitetable > .comment, #bottom-comments:not(.child) > .sitetable > .comment, #images, .combined-search-page > .content, .sponsorshipbox, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side, #ad_main_top {
-	background: rgba(255, 255, 255, 0.1);
-}
+	body.listing-page > .content, body.other-discussions-page > .content, .comments-page .link, .commentarea > .sitetable > .comment, #bottom-comments:not(.child) > .sitetable > .comment, #images, .combined-search-page > .content, .sponsorshipbox, .stylesheet-customize-container .pretty-form, .side .sidecontentbox, .account-activity-box, .side .titlebox, #previoussearch #moresearchinfo, #ad-frame, #ad_main, .wiki-page .wiki-page-content, .linefield, .submit-page .roundfield, .login-form-side, #ad_main_top {
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	.side .titlebox h1.redditname:before {
+		border-radius: 2px;
+	}
 
 /* #endregion */
